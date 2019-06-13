@@ -9,7 +9,7 @@
     unsplashRequest.send(); 
     
     function addImage(){}
-    const searchedForText = 'hippos';
+    //const searchedForText = 'hippos';
     const unsplashRequest = new XMLHttpRequest();
 
     unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
