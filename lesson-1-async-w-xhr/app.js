@@ -14,7 +14,7 @@
     articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=ekorkdzHxaeDaYQpKdm0wxKOPqSnlL92`);
     articleRequest.send();
     
-    //function addImage(){}
+    function addImage(){}
     //const searchedForText = 'hippos';
     //const unsplashRequest = new XMLHttpRequest();
 
