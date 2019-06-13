@@ -1,7 +1,13 @@
 (function () {
     const form = document.querySelector('#search-form');
     const searchField = document.querySelector('#search-keyword');
-    //let searchedForText;
+    const searchedForText;
+    const unsplashRequest = new XMLHttpRequest();
+    unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
+    unsplashRequest.onload = addImage;
+    unsplashRequest.setRequestHeader('Authorization', 'Client-ID <your-client-id>');
+    unsplashRequest.send(); 
+    
     function addImage(){}
     const searchedForText = 'hippos';
     const unsplashRequest = new XMLHttpRequest();
